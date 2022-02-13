@@ -28,14 +28,19 @@ li{
     list-style: none;
 }
 /*Police*/
-
+a:not(href){
+    color: #495057 !important;
+}
+a{
+    cursor: pointer;
+}
 h1,h2,h3,h4,h5,h6{
     font-family: 'Roboto', sans-serif;
     color: #495057;
 }
 p,a,li>a{
     font-family: 'Roboto', sans-serif;
-    text-align: justify;
+    /*text-align: justify;*/
 }
 p,li>a{
     color: #495057;
@@ -141,6 +146,9 @@ li.active>a{
 .langue{
     cursor: pointer;
 }
+.txt-hobbies{
+    text-align: center;
+}
 /* ////////////MAIN//////////// */
 .i-info{
     width: 40px !important;
@@ -176,7 +184,7 @@ hr{
 }
 /* Work */
 .hr-work{
-    margin-left: 25px !important;
+    margin-left: 3rem !important;
 }
 /*FOOTER*/
 footer{
@@ -184,16 +192,11 @@ footer{
     height: 0.5rem;
 }
 /*///////SCALES//////////////////////////////////////*/
-
-@media (min-width: 580px) {
-    .image-back{
-        width: 100%;
-        height: 443px;
-    }
+@media (min-width: 450px) {
     /*Bouton download*/
     .bouton-download{
         position: absolute;
-        right: 8rem;
+        right: 3rem;
         z-index: 1;
     }
     .carre{
@@ -205,8 +208,22 @@ footer{
     .fa-file-download{
         color: white;
     }
+}
+@media (min-width: 580px) {
+    .image-back{
+        width: 100%;
+        height: 443px;
+    }
+    .hr-work{
+    margin-left: 6rem !important;
+    }   
     footer{
         height: 2rem;
+    }
+}
+@media (max-width: 768px){
+    .ligne{
+        display: none;
     }
 }
 @media (min-width: 768px) {
@@ -226,8 +243,11 @@ footer{
     .poste{
         padding-left: 6rem !important;
     }
+    .ligne{
+        display: block;
+        margin-top: -1.2rem;
+    }
 }
-
 @media (min-width: 992px) {
     .image-back{
         width: 100%;
