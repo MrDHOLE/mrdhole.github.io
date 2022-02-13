@@ -121,6 +121,9 @@ li>a:hover{
 .tab-content.active{
     display: block;
 }
+.nav-link{
+    padding: 1rem 0.5rem;
+}
 .nav-link:hover{
     color: #4dabf7;
 }
