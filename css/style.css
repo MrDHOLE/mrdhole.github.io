@@ -128,7 +128,8 @@ li.active>a{
     color: #4dabf7 !important;
 }
 .image-back{
-    background-image: url("../img/photo.png");
+    background-image: url("../img/illustration.png");
+    background-color: #91969a;
     /* Full height */
     width: 100%;
     height: 483px;
