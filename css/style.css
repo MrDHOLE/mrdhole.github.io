@@ -195,6 +195,48 @@ footer{
     margin-top: 0.5rem;
     height: 0.5rem;
 }
+/*KONAMI CODE*/
+.cloud {
+    position: fixed;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    -webkit-transition: -webkit-transform 1s ease-out;
+    -moz-transition: -moz-transform 1s ease-out;
+    -o-transition: -o-transform 1s ease-out;
+    -ms-transition: -ms-transform 1s ease-out;
+    transition: transform 1s ease-out;
+    z-index: 1000;
+}
+
+.expand {
+    opacity: 1;
+    -webkit-transform: scale(100);
+    -moz-transform: scale(100);
+    -o-transform: scale(100);
+    transform: scale(100);
+}
+
+.ground {
+    height: 64px;
+    width: 100%;
+    background: url("../img/konami/ground.png");
+    position: fixed;
+    bottom: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+.mario {
+    background: url('../img/konami/mario-sprite.png');
+    width: 50px;
+    height: 60px;
+    position: fixed;
+    left: 110%;
+    bottom: 64px;
+    background-position: 0px -178px;
+    z-index: 1000;
+}
 /*///////SCALES//////////////////////////////////////*/
 @media (min-width: 450px) {
     /*Bouton download*/
