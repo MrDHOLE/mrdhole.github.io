@@ -40,7 +40,7 @@ $(document).keyup(function (e) {
     clearTimeout(timer);
     timer = setTimeout(function () {
         input = "";
-    }, 1000);
+    }, 750);
     check_input();
 });
 function check_input() {
